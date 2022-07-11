@@ -1,6 +1,6 @@
 from django.urls import reverse
 from django.db import models
-from mainapp.models import Project
+from portfolio.models import Project
 
 class Comment(models.Model):
 	project = models.ForeignKey(Project, on_delete=models.CASCADE, help_text="Проект", verbose_name="Проект")
